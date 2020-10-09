@@ -1,0 +1,61 @@
+import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+class Main {
+  public static void main(String[] args) {
+   
+    Scanner sn=new Scanner(System.in);
+  List milista=new ArrayList();
+  Scanner sn=new Scanner(System.in);
+
+  boolean salir = false;
+       int opcion; //Guardaremos la opcion del usuario
+        
+       while(!salir){
+            
+           System.out.println("1. SUMAR");
+           System.out.println("2. RESTAR");
+           System.out.println("3. MULTIPLICAR");
+          
+           System.out.println("4. SALIR");
+              System.out.println("DAME 1O ELEMeNTOS DE LA LISTA");
+              int elementos=sn.nextInt();
+              milista.add(elementos);
+           System.out.println("selecciona una de las opciones");
+           opcion = sn.nextInt();
+            
+           switch(opcion){
+               case 1:
+                   System.out.println("dame 3 POSICIONES :");
+                   int posicion=sn.nextInt();
+                    milista.get(posicion);
+                   suma=posicion+posicion+posicion;
+                   System.out.println("la suma es"+suma);
+                   
+                   break;
+               case 3:
+                   System.out.println("dame 2 posicines:");
+                   int posicion=sn.nextInt();
+                   milista.get(posicion);
+                   resta=posicion+posicion;
+                    System.out.println("la resta es:"+resta);
+                   break;
+                case 2:
+                   System.out.println("dame 3 posicioneS a MULTIPLICAR");
+                   int posicion=sn.nextInt();
+                  int multiplicacion=posicion*posicion*posicion;
+                  System.out.println("la multiplicacion es:"+multiplicacion);
+                   break;
+              
+                case 4:
+                   salir=true;
+                   break;
+                default:
+                   System.out.println("Solo números entre 1 y 4");
+                   break;
+           }
+            
+       }
+  }
+}
+//ZAMORA ESPARZA YEZIER CRUZ
